@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Providers from '@/components/Providers';
+import { Toaster } from '@/components/ui/Toast';
 import { cn } from '@/lib/utils/utils';
 import '@/styles/globals.css';
 import { Inter } from 'next/font/google'
@@ -19,6 +20,8 @@ export default function RootLayout ({
       <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialiased'>
         <Providers>
           {children}
+
+          <Toaster position='bottom-right' />
 
           {/* @ts-expect-error Server Component */}
           <Navbar />
