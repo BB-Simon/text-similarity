@@ -1,6 +1,6 @@
 import { forwardRef, HTMLAttributes } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
-import { cn } from '@/app/lib/utils/utils';
+import { cn } from '@/lib/utils/utils';
 
 const HeadingVariants = cva(
   'text-black dark:text-white text-center lg:text-left font-extrabold loading-light tracking-tighter',
